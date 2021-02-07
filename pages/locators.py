@@ -7,7 +7,8 @@ class BasePageLocators():
 
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-
+    BASKET_ITEM = (By.CSS_SELECTOR, ".basket - items")
+    TEXT_BASKET_EMPTY = (By.XPATH, "//p[contains(text(), 'Ваша корзина пуста')]")
 
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_formm")
@@ -21,7 +22,6 @@ class ProductPageLocators:
     ALERT_PRICE = (By.CSS_SELECTOR, ".alertinner>p>strong")
     PRICE = (By.CSS_SELECTOR, ".col-sm-6.product_main>.price_color")
     SUCCESS_MES = (By.CSS_SELECTOR, "#messages>div:nth-child(1)")
-    BASKET_ITEM = (By.CSS_SELECTOR, ".basket - items")
-    TEXT_BASKET_EMPTY = (By.XPATH, "//p[contains(text(), 'Ваша корзина пуста')]")
+
 
 

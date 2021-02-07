@@ -67,7 +67,7 @@ class BasePage:
 
         return True
 
-    def open_busket(self):
+    def go_to_basket(self):
         link = self.browser.find_element(*BasePageLocators.BTN_OPEN_BASKET)
         link.click()
 

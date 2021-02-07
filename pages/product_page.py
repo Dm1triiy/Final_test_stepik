@@ -36,7 +36,3 @@ class ProductPage(BasePage):
         btn_basket.click()
         self.solve_quiz_and_get_code()
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MES), "Success message is presented, but should not be"
-
-    def should_be_basket_empty(self):
-        assert self.is_not_element_present(*ProductPageLocators.BASKET_ITEM), "Basket is not empty"
-        assert self.is_element_present(*ProductPageLocators.TEXT_BASKET_EMPTY), "Basket is not empty"
