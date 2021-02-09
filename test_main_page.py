@@ -3,6 +3,7 @@ from .pages.main_page import MainPage
 from .pages.basket_page import BasketPage
 import pytest
 
+
 @pytest.mark.login_guest
 class TestLoginFromMainPage():
     
@@ -27,5 +28,3 @@ class TestLoginFromMainPage():
         page.go_to_basket()
         basket_page = BasketPage(browser, browser.current_url)
         basket_page.should_be_basket_empty()
-
-
