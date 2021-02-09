@@ -7,7 +7,7 @@ class LoginPage(BasePage):
         super().__init__(browser, url, timeout)
         self.driver = None
 
-    def should_be_login_page(self,):
+    def should_be_login_page(self):
         self.should_be_login_url()
         self.should_be_login_form()
         self.should_be_register_form()
